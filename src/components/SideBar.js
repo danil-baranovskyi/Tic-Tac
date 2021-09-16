@@ -1,5 +1,7 @@
 import React from "react";
 import {connect} from "react-redux";
+import {createStructuredSelector} from "reselect";
+import {winner} from "../store/selectors/boardSelector.js";
 
 const SideBar = ({winner}) => {
     return (
@@ -12,11 +14,15 @@ const SideBar = ({winner}) => {
     );
 }
 
-const mapStateToProps = state => {
-    return {
-        winner: state.board.winner
-    }
-}
+// const mapStateToProps = state => {
+//     return {
+//         winner: state.board.winner
+//     }
+// }
+
+const mapStateToProps = createStructuredSelector({
+    winner: winner,
+})
 
 export default connect(mapStateToProps)(SideBar)
 
