@@ -1,9 +1,8 @@
-const rootReducer = (state, action) => {
-    switch (action.type){
+import {combineReducers} from "redux";
+import {board} from "./board.js";
 
-        default: return state;
-    }
-}
+const rootReducer = combineReducers({
+    board,
+});
 
 export default rootReducer;
-//

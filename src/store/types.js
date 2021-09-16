@@ -1,0 +1,3 @@
+export const UPDATE_BOARD = 'UPDATE_BOARD';
+export const CHANGE_PLAYER = "CHANGE_PLAYER";
+export const RESET_BOARD = "RESET_BOARD"
