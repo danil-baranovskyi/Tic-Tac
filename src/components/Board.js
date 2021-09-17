@@ -10,7 +10,7 @@ const Board = () => {
             const cols = [];
 
             for (let y = 0; y < 3; y++) {
-                cols.push(<Square key={index} index={index} />)
+                cols.push(<Square key={index} index={index}/>)
                 index++;
             }
 

@@ -6,8 +6,8 @@ import ResetButton from "./ResetButton.js";
 const Game = () => {
     return (
         <React.Fragment>
-            <Board />
-            <SideBar />
+            <Board/>
+            <SideBar/>
             <ResetButton/>
         </React.Fragment>
     );

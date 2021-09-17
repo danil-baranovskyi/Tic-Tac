@@ -18,7 +18,6 @@ export function calculateWinner(squares) {
     }
 
     const isEmpty = squares.filter(el => el === "")
-
     if (isEmpty.length < 1){
         return '';
     }

@@ -1,7 +1,7 @@
 import React from "react";
 import {connect} from "react-redux";
 import {createStructuredSelector} from "reselect";
-import {winner} from "../store/selectors/boardSelector.js";
+import {winner} from "../store/board/selectors.js";
 
 const SideBar = ({winner}) => {
     return (
@@ -14,16 +14,11 @@ const SideBar = ({winner}) => {
     );
 }
 
-// const mapStateToProps = state => {
-//     return {
-//         winner: state.board.winner
-//     }
-// }
-
 const mapStateToProps = createStructuredSelector({
-    winner: winner,
+    winner,
 })
 
+// noinspection JSCheckFunctionSignatures
 export default connect(mapStateToProps)(SideBar)
 
 
